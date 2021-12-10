@@ -1,4 +1,4 @@
-function decode(string) {
+function decrint(string) {
   var cars = '0x'
   for(car = 0; car < string.length; car++) {
     if (Number(string[car].charCodeAt()).toString(16).length == 2){
@@ -10,7 +10,7 @@ function decode(string) {
   };
   return parseInt(cars,16);
 };
-function encode(integer) {
+function encrint(integer) {
   var otpt = integer.toString(16)
   var str = ''
   if (String(otpt).length / 2 != (String(otpt).length / 2).toFixed(1)) {
